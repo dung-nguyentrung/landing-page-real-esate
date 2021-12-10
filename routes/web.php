@@ -21,7 +21,7 @@ Route::get('/', function () {
 
 
 Route::post('/contact', function (Request $request) {
-    $sheetdb = new SheetDB('kcau756vw7pxu');
+    $sheetdb = new SheetDB('api_key');
     $sheetdb->create([
         'name' => $request->name,
         'phone' => $request->phone,
